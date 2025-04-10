@@ -1,0 +1,8 @@
+services:
+  nextjs-for-jenkins:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    image: nextjs-for-jenkins-production
+    ports:
+      - "3000:3000"
